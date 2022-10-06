@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Module0 Part1
-parent: Module0
+parent: blueprints
 nav_order: 2
 ---
 ## Module0
