@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Module0 Part1
-nav_order: 2
+nav_order: 1
+parent: Module0
 ---
 ## Module0
 
