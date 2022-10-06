@@ -2,7 +2,7 @@
 layout: default
 title: Module1Inside
 parent: Module1
-nav_order: 2
+nav_order: 3
 ---
 
 ## Module1
