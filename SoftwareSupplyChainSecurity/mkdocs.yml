@@ -1,0 +1,34 @@
+site_name: Software Supply Chain Security
+nav:
+  #- #Home : index.md
+  - Overview: index.md
+  - Module-0:
+    - Page 1 : index.md
+  - faq.md
+  - Support: SUPPORT.md
+  - roadmap.md
+  - Releases ⧉: https://github.com/argoproj/argo-cd/releases
+  - Blog ⧉: https://blog.argoproj.io/
+  - Contributions : CONTRIBUTING.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    font:
+      text: Roboto
+      code: Roboto Mono
+    accent: deep orange
+    logo: assets/logo.png #todo
+    features:
+    - toc.follow
+    - navigation.top
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+repo_url: https://github.com/squidfunk/mkdocs-material #change it
+
+
