@@ -1,34 +1,67 @@
 site_name: Software Supply Chain Security
 nav:
-  #- #Home : index.md
   - Overview: index.md
-  - Module-0:
-    - Page 1 : index.md
-  - faq.md
+  - Getting Started:
+    - Core Concepts: getting-started/coreconcept.md
+    - Pre-requisites: getting-started/prereqs.md
+  - Module0:
+    - Setup Repository: module0/setup-repo.md
+    - Base Image Creation : module0/baseimage.md
+    - Deploy Container Registry: module0/container-registry.md
+    - Deploy Continuous Integration System: module0/ci.md
+    - Deploy Continuous Delivery System: module0/cd.md
+    - Deploy Continuous Deployment System: module0/cd-deploy.md
+  - FAQs: faq.md
   - Support: SUPPORT.md
-  - roadmap.md
-  - Releases ⧉: https://github.com/argoproj/argo-cd/releases
-  - Blog ⧉: https://blog.argoproj.io/
+  - Roadmap: roadmap.md
+  - Releases ⧉: https://
   - Contributions : CONTRIBUTING.md
+  - About Us: about/index.md
+# Configuration
 theme:
   name: material
-  palette:
-    scheme: slate
-    primary: deep purple
-    font:
-      text: Roboto
-      code: Roboto Mono
-    accent: deep orange
-    logo: assets/logo.png #todo
-    features:
-    - toc.follow
-    - navigation.top
-    - navigation.tabs
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    - content.tooltips
     - navigation.indexes
     - navigation.top
-    - content.code.annotate
-    # - content.tabs.link
-    - content.tooltips
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
 repo_url: https://github.com/squidfunk/mkdocs-material #change it
 
 
