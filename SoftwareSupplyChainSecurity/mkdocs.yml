@@ -1,33 +1,41 @@
 site_name: Software Supply Chain Security
+repo_url: https://github.com/SoftwareSupplyChainSecurity/blueprints
+repo_name: Github
+edit_uri: ''
+repo_counts:
+  - tag
+  - stars
 nav:
   - Overview: index.md
-  - Getting Started:
-    - Core Concepts: getting-started/coreconcept.md
-    - Pre-requisites: getting-started/prereqs.md
+  - Core Concepts: core-concepts.md
+  - Getting Started: getting-started/index.md
   - Module0:
-    - Setup Repository: module0/setup-repo.md
+    - Setup Repository: module0/setup.md
     - Base Image Creation : module0/baseimage.md
     - Deploy Container Registry: module0/container-registry.md
     - Deploy Continuous Integration System: module0/ci.md
     - Deploy Continuous Delivery System: module0/cd.md
     - Deploy Continuous Deployment System: module0/cd-deploy.md
   - FAQs: faq.md
-  - Support: SUPPORT.md
   - Roadmap: roadmap.md
   - Releases ⧉: https://
   - Contributions : CONTRIBUTING.md
   - About Us: about/index.md
+  - License: License.md
+  - Changelog: changelog.md
+
+
 # Configuration
 theme:
   name: material
   # Static files
   static_templates:
     - 404.html
-
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
-
+  icon:
+    repo: fontawesome/brands/git-alt
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
@@ -41,7 +49,10 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    - toc.integrate
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    #- toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -59,9 +70,8 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
-  icon:
-    logo: logo
-
-repo_url: https://github.com/squidfunk/mkdocs-material #change it
 
 
+markdown_extensions:
+  - toc:
+      title: On this page
