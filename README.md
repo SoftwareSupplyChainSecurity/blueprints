@@ -21,9 +21,11 @@ This repository consists all documents for the project.
 3. Navigate to ./blueprints/SoftwareSupplyChainSecurity
 
 4. Execute the following command and you can browse to the local changes at localhost:8000 
+
    ```mkdocs serve```
 
-5. Raise a PR for review. Once th review is approved execute the 
+5. Raise a PR for review. Once th review is approved execute the
+
    ```mkdocs gh-deploy```
 
 6. This will push the changes to github brance gh-pages (release branch).
