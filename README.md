@@ -28,4 +28,4 @@ This repository consists all documents for the project.
 
    ```mkdocs gh-deploy```
 
-6. This will push the changes to github brance gh-pages (release branch).
+6. This will push the changes to github branch gh-pages (release branch)
